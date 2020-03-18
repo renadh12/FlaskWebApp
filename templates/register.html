@@ -1,0 +1,15 @@
+#hidden_tag() method is related to the secret key to protect the app - Cross Site Request Forgery token
+
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <dir class="form-group">
+                <legend class="border-bottom mb-4"> Join Today </legend>
+            </dir>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
