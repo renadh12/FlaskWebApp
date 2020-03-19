@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
@@ -25,14 +25,18 @@ def fut():
     return render_template('fut.html', title='FUT Blog')
 
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])  # The methods will enable the site to accept HTTP requests for
+# submission
 def register():
     form = RegistrationForm()
+    if form.validate_on_submit():
+        flash(f'Account successfully created for {form.username.data}!', 'success')
+        return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
 
 @app.route('/login')
-def register():
+def login():
     form = LoginForm()
     return render_template('login.html', title='Login', form=form)
 

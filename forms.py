@@ -15,7 +15,7 @@ class RegistrationForm(FlaskForm):  # RegistrationForm will inherit from FlaskFo
     email = StringField('Email', validators=[DataRequired(),
                                              Email()])  # use Email validator to make sure an email address is entered
     password = PasswordField('Password', validators=[DataRequired()])
-    confirm_password = PasswordField('Password', validators=[DataRequired(), EqualTo('password')])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     # use EqualTo
     # validator to make sure
     # password = confirm_password

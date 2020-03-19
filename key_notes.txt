@@ -1,0 +1,1 @@
+#hidden_tag() method in register.html is related to the secret key to protect the app - Cross Site Request Forgery token
