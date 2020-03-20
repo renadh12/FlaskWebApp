@@ -28,7 +28,7 @@ class LoginForm(FlaskForm):
                                              Email()])  # Using email since it's easy to forget usernames
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
-    submit = SubmitField('Sign Up')
+    submit = SubmitField('Login')
 
     # We have to set a secret key to our app protect it from modifying cookies, forgery attacks and cross site requests
     # To generate a secret key
