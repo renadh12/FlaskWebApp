@@ -1,1 +1,15 @@
 #hidden_tag() method in register.html is related to the secret key to protect the app - Cross Site Request Forgery token
+
+# We have to set a secret key to our app protect it from modifying cookies, forgery attacks and cross site requests
+# To generate a secret key
+# Go to Terminal/Command line
+# Type - python
+# Type - import secrets
+# Type - secrets.token_hex(16) - 16 is the number of bytes
+# Copy the secret key and set it equal to app.config['SECRET_KEY']
+
+sqlite3.IntegrityError: UNIQUE constraint failed: user.image_file
+
+ # we are passing utcnow as an argument and not as a function
+    # utcnow() because we don't want to pass the
+    # current date as an argument. The function will run after it's passed along
