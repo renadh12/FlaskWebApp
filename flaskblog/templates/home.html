@@ -1,10 +1,33 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <title>Renadh Chowdhury</title>
-    <h1>Resume</h1>
-    <h1>Projects</h1>
-    <h1>FUT</h1>
-    <h1>Food</h1>
-    <h1>Fashion</h1>
+<article class="media content-section">
+    <div class="header" id="myHeader">
+        <h2>COVID-19</h2>
+        <p class="article-content">
+            This started off as a personal project for the upcoming US Presidential Elections. However, since all of us around the world are dealing with an even more compelling subject, I figured this CRUD app might come handy.
+
+            The goal is to educate myself as much as possible about the pandemic while I also get to know how my homies are doing.
+
+            Location:
+            Affected?
+            How has it affected your daily routine?
+            Do you have a different perspective to the world and life?
+
+        </p>
+    </div>
+</article>
+    {% for post in posts %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ post.author.username }}</a>
+                    <small class="text-muted">{{ post.date_posted.strftime('%c') }}</small>
+                </div>
+                <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}"> {{ post.title }} </a></h2>
+                <p class="article-content">{{ post.content }}</p>
+            </div>
+        </article>
+    {% endfor %}
 {% endblock content %}
