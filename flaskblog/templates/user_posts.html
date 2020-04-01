@@ -1,22 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<article class="media content-section">
-    <div class="header" id="myHeader">
-        <h2>COVID-19</h2>
-        <p class="article-content">
-            This started off as a personal project for the upcoming US Presidential Elections. However, since all of us around the world are dealing with an even more compelling subject, I figured this CRUD app might come handy.
-
-            The goal is to educate myself as much as possible about the pandemic while I also get to know how my homies are doing.
-
-            Location:
-            Affected?
-            How has it affected your daily routine?
-            Do you have a different perspective to the world and life?
-
-        </p>
-    </div>
-</article>
+    <h1 class="mb-3"> Posts by {{ user.username }} ({{ posts.total }})</h1>
     {% for post in posts.items %} <!--pagination object so each post is an item-->
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
@@ -33,9 +18,9 @@
     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if posts.page == page_num %}
-                <a class="btn btn-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-info mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
             {% else %}
-                <a class="btn btn-outline-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-outline-info mb-4" href="{{ url_for('user_posts', username=user.username, page=page_num) }}">{{ page_num }}</a>
             {% endif %}
         {% else %}
             ...
