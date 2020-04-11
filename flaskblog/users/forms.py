@@ -1,9 +1,8 @@
-from flask_wtf import FlaskForm  #
+from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
-from flask_login import current_user
+from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, \
-    TextAreaField  # Import stringfield class to write the fields for
+from flask_login import current_user
 from flaskblog.models import User
 
 
@@ -51,16 +50,13 @@ class LoginForm(FlaskForm):
     # Type - secrets.token_hex(16) - 16 is the number of bytes
 
 
-class UpdateAccountForm(FlaskForm):  # RegistrationForm will inherit from FlaskForm class
+class UpdateAccountForm(FlaskForm):  # will inherit from FlaskForm class
 
     # To limit a user from entering invalid data - leaving the field blank, entering more than 50 characters
     # we will use validators imported from wtforms
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField('Email', validators=[DataRequired(),
                                              Email()])  # use Email validator to make sure an email address is entered
-    password = PasswordField('Password', validators=[DataRequired()])
-    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
-    # use EqualTo
     # validator to make sure
     # password = confirm_password
 
@@ -81,7 +77,18 @@ class UpdateAccountForm(FlaskForm):  # RegistrationForm will inherit from FlaskF
                 raise ValidationError('That email is taken. Please choose a different one')
 
 
-class PostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    content = TextAreaField('New Post', validators=[DataRequired()])
-    submit = SubmitField('Post')
+class RequestResetForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    submit = SubmitField('Request Password Reset')
+
+    # We have to verify whether the user has an account or not
+    def validate_email(self, email):
+        user = User.query.filter_by(email=email.data).first()
+        if user is None:
+            raise ValidationError('There is no account associated with this email. Please register.')
+
+
+class ResetPasswordForm(FlaskForm):
+    password = PasswordField('Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm New Password', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('Reset Password')
