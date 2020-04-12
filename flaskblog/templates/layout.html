@@ -12,7 +12,7 @@
     {% if title %}
         <title>{{ title }}</title>
     {% else %}
-        <title>renadhc</title>
+        <title>thebloglog</title>
     {% endif %}
     <meta charset="UTF-8">
     <title>Title</title>
@@ -22,7 +22,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="/">renadhc</a>
+          <a class="navbar-brand mr-4" href="/">thebloglog</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -63,6 +63,16 @@
           {% block content %}{% endblock %}
         </div>
         <div class="col-md-4">
+            <div class="content-section">
+                <div class="d-flex justify-content-between">
+                    <iframe id="inlineFrameExample"
+                    title="Inline Frame Example"
+                    width="300"
+                    height="100"
+                    src="https://ourworldindata.org/grapher/total-deaths-and-cases-covid-19?time=1..81" align="right" style="width: 120%; height: 500px; border: 0px none;">
+                    </iframe>
+                </div>
+            </div>
           <div class="content-section">
             <h3>COVID-19 QuickInfo</h3>
               <ul class="list-group">

@@ -1,27 +1,6 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<article class="media content-section">
-    <div class="header" id="myHeader">
-        <h2>COVID-19</h2>
-        <p class="article-content">
-            What up my folks? Well the goal has been to build a CRUD web app (blogspot) from scratch to get a taste of full stack development. It was essentially geared towards the upcoming 2020 US Elections but since we are dealing with a way more compelling issue which will surely have a lasting impact on our lives, it only made sense I pivot. I'm trying to educate myself and the people around me as much as possible regarding the pandemic.
-
-            The death toll has risen over 1.3 million. Proactive - any info testing f
-            There have been way too much misinformation rumbling on the internet. I'm trying to garner as much info as possible to bust the myths.
-            The unemployment rate =
-            Recruiting agency connect the unemployed
-
-
-
-            Location:
-            Affected?
-            How has it affected your daily routine?
-            Do you have a different perspective to the world and life?
-
-        </p>
-    </div>
-</article>
     {% for post in posts.items %} <!--pagination object so each post is an item-->
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
