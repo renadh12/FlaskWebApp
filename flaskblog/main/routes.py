@@ -25,6 +25,15 @@ def cov():
     return render_template('cov.html', title='COVID-19')
 
 
+@main.route('/tech')
+def tech():
+    return render_template('tech.html', title='Tech')
+
+@main.route('/fut')
+def fut():
+    return render_template('fut.html', title='FIFA Ultimate Team')
+
+
 @main.route('/about')
 def about():
     return render_template('about.html', title='About')
