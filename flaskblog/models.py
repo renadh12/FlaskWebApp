@@ -44,7 +44,7 @@ class User(db.Model, UserMixin):
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100), unique=True, nullable=False)
+    title = db.Column(db.String(100), nullable=False)
 
     # we are passing utcnow as an argument and not as a function
     # utcnow() because we don't want to pass the

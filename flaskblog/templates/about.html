@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>About</h1>
+<br>
+My name is Renadh, this is my personal blog. I figured I could also add a feature to make it a little more interactive for myself and my clique to engage in discussions regarding certain topics every once in a while.
+<br>
+<br>
+I have been meaning to dabble with full-stack development for quite some time. Ended up building a CRUD web app from scratch for my portfolio.
+<br>
+
+<br>
+The website is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps for getting started are quite straightforward,
+<br>
+<br>
+
+<ul style="list-style-type:square;">
+    <li> <b><a href="{{ url_for('users.register') }}"> Register</a> </b>(top right navigation bar) <br>
+      You have to set a username, enter your email and password to sign up. I’d recommend using any of your secondary emails to register for now.</li>
+    <br>
+    <li><b>New Post</b><br>
+After registration, you will be redirected to the Login page. You should be able to log in and create your post by clicking on New Post on the top right corner of the web page which will generate a create post template with two input entry fields (Title, Content).
+  </li>
+    <br>
+  <li><b>Post</b><br>
+      Once you’re done, click on Post to submit your post. Your content along with the title should show up on the Home feed <b><i>which is visible to the public so if you don’t feel comfortable, feel free to opt out, it’s totally cool!</i></b>
+  </li>
+    <br>
+    <li><b>Account</b><br>
+Once authenticated, you have the ability to update your profile picture, username and email. Head over to Account (top right navigation bar).
+  </li>
+</ul>
+<br>
+I want to thank you for taking the time to contribute to my blog. I would appreciate any feedback since you are practically the QA team for this website. Thank you and stay safe!
+<br>
+<br>
+<br>
+
+{% endblock content %}

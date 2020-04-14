@@ -27,4 +27,4 @@ def cov():
 
 @main.route('/about')
 def about():
-    return render_template('about.html', title='About Us')
+    return render_template('about.html', title='About')
