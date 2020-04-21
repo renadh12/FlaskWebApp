@@ -7,7 +7,10 @@
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4"> Join Today </legend>
+                <legend class="border-bottom mb-4"> Register </legend>
+
+                <div><b>The system allows you to use any non existent random email to sign up. You do not have to use your personal email.</b></div>
+                <br>
                 <div class="form-group">
                 {{ form.username.label(class="form-control-label") }}
                     {% if form.username.errors %}
