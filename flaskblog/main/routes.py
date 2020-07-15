@@ -31,9 +31,22 @@ def tech():
 
 @main.route('/fut')
 def fut():
-    return render_template('fut.html', title='FIFA Ultimate Team')
-
+    page = request.args.get('page', 1, type=int)  # default page set to 1
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    return render_template('fut.html', title='FUT', posts=posts)
 
 @main.route('/about')
 def about():
     return render_template('about.html', title='About')
+
+@main.route('/human')
+def human():
+    return render_template('human.html', title='The Side Project')
+
+@main.route('/nera')
+def nera():
+    return render_template('side.html', title='The Side Project : Asmaa Amadou')
+
+@main.route('/asmaa')
+def asmaa():
+    return render_template('asmaa.html', title='The Side Project')
