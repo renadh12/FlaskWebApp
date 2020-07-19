@@ -13,14 +13,16 @@
 	</head>
 	<body class="is-preload">
 
+
+
 		<!-- Header -->
 			<section id="header">
 				<header>
 					<h1 id="logo"><a href="#">The Side Project</a></h1>
-					<p>The human mind can be a gold mine if you ask the right questions. Check out our <u>Home</u> page for more fascinating insights from around the globe.</p>
-					<br>
+					<p><a href="{{ url_for('main.human') }}">Home</a></p>
+					<p></p>
 					<span class="image avatar"><img src="{{ url_for('static', filename='images/profasmaa.jpg') }}" alt="" /></span>
-					<p>Asmaa Amadou is a fashion and owns Cameleon Global based in New York</p>
+					<p>Today we are interviewing Asmaa Amadou who is a fashion and owns Cameleon Global based in New York.</p>
 				</header>
 
 				<nav id="nav">
@@ -58,7 +60,7 @@
 								<div class="container">
 									<h4>The Side Project</h4>
 									<header class="major">
-										<h2>Asmaa Amadou, Founder of Cameleon Global </h2>
+										<h2>Asmaa Amadou, Cameleon Global </h2>
 										<p>Sustainable Fashion, Cameleon Global and Togo.</p>
 
 										<ul class="icons">
@@ -70,10 +72,10 @@
 
 									</header>
 									<h4>Asmaa's Journey</h4>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.
+									<p>"Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.
 									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu
 									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu
-									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu</p>
+									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu"</p>
 								</div>
 							</section>
 
@@ -112,6 +114,16 @@
 
 						<!-- Five -->
 						<section id="five">
+								<div class="container">
+															<h4>llkl's Journey</h4>
+									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.
+									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu
+									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu
+									Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metu</p>
+								</div>
+							</section>
+
+						<section id="six">
 								<div class="container">
 															<h4>llkl's Journey</h4>
 									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.
@@ -452,9 +464,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 					</div>
 
+
 				<!-- Footer -->
 					<section id="footer">
+
 						<div class="container">
+							<p><strong><i>If you're interested in more blog interviews, check out our <a href="{{ url_for('main.human') }}">page on thebloglog.</a></i></strong></p>
 							<ul class="copyright">
 								<li>&copy; thebloglog. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
