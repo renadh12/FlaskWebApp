@@ -23,7 +23,7 @@ def save_picture(form_picture):
 # We are using _external to make user user clicks on the absolute url not relative
 def send_reset_email(user):
     token = user.get_reset_token()
-    msg = Message('Password Reset Request', sender='ss@gmail.com', recipients=[user.email])
+    msg = Message('Password Reset Request', sender='rencblog@gmail.com', recipients=[user.email])
     msg.body = f'''Please click the link below to reset your password
 {url_for('users.reset_token', token=token, _external=True)}
 If you did not make this request, please disregard the email. No changes will be made.
