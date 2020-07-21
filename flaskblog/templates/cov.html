@@ -1,45 +1,106 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block content %}
-    <h1>Coronavirus (COVID-19)</h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<br>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>thebloglog</title>
+    {% endif %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 
-COVID-19 is an infectious disease caused by a newly discovered coronavirus (SARS-CoV-2).<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank">(https://www.who.int/)</a>
-<br>
-<br>
-The global death toll currently stands at 2,477,426 while 70 potential coronavirus vaccines are in development according to <a href="https://www.who.int/" target="_blank">World Health Organization (WHO)</a>. Our World in Data did a great job in building out this tracker (right side of your web page). It has options to change countries and the timeline. <a href="https://ourworldindata.org/" target="_blank">(https://ourworldindata.org/)</a>
-<br>
-<br>
-I figured using this blog would be a more efficient way to check up on all my friends around the globe and find out what they have been up to during this pandemic crisis.
-<br>
-<br>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="/">thebloglog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
+                <a class="nav-item nav-link" href="{{ url_for('main.cov') }}">Tech</a>
+                <a class="nav-item nav-link" href="{{ url_for('main.human') }}">The Side Project</a>
+              <a class="nav-item nav-link" href="{{ url_for('main.about') }}">About</a>
 
-I have outlined a set of questions you can answer in your post (not compulsory). What you write is totally up to your discretion. Feel free to add any type of content (articles, charts, images) as long as it is related to COVID-19 and cited properly.
-<br>
-<br>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+                {% if current_user.is_authenticated %}
+                    <a class="nav-item nav-link" href="{{ url_for('posts.new_post') }}">New Post</a>
+                    <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
+                    <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
+                {% else %}
+                    <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
+                    <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
 
-<ul style="list-style-type:disc;">
-  <li>How are you?</li>
-  <br>
-  <li>What impact did this have on your daily routine, mental and physical health, work, business, relationships and most importantly your perception on life, planet earth and the society?</li>
-  <br>
-  <li>Are you volunteering? Please share any contact info or links for fundraisers, foodbanks, unemployment help or testing.</li>
-  <br>
-  <li>Have you or any of your near and dear ones been affected? If yes, would you like to share your experience, recommend any precautionary steps for the rest of us?</li>
-  <br>
-  <li>If you feel comfortable sharing your location, what impact did this have on your country’s economy? How are the government and the populace dealing with it?</li>
-  <br>
-  <li>Are you working on any projects related to coronavirus? Would you like to share any new information related to development of vaccines, treatment, research? Share any links if you'd like.</li>
-  <br>
-  <li>Just like the coronavirus, the misinformation has been spreading rapidly too. Any myths you’d like to bust to combat it?</li>
-</ul>
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+          {% block content %}{% endblock %}
+        </div>
+        <br>
+        <br>
+        <div class="col-md-4">
+            <div class="content-section">
+                <div class="d-flex justify-content-between">
+                    <iframe id="inlineFrameExample"
+                    title="Inline Frame Example"
+                    width="300"
+                    height="100"
+                    src="https://ourworldindata.org/grapher/total-deaths-and-cases-covid-19?time=1..81" align="right" style="width: 120%; height: 500px; border: 0px none;">
+                    </iframe>
+                </div>
+            </div>
+          <div class="content-section">
+            <h3>COVID-19 Essential Links</h3>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-light"><a href="https://www.benefits.gov/benefit/91" target="_blank">Unemployment Insurance (US ONLY)</a></li>
+                <li class="list-group-item list-group-item-light"><a href="https://www.foodbanknyc.org/get-help/" target="_blank">FOODBANK FOR NYC</a></li>
+                  <li class="list-group-item list-group-item-light"><a href="https://www.gofundme.com/f/what-will-they-eat-in-bangladesh?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1" target="_blank">What Will They Eat In Bangladesh? Fundraiser by Mayeesha Kamal</a></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<br>
+    <footer>&copy; Copyright 2020 <a href="https://www.thebloglog.site" target="_blank">www.thebloglog.site</a></footer>
 
-To learn more about my blog and to get started, please <a href="{{ url_for('main.about') }}">proceed here</a>.
+    <br>
+    <br>
 
-<br>
-<br>
-<br>
-{% endblock content %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
