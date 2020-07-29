@@ -2,23 +2,21 @@
 <html lang="en">
 
 <head>
+  <!-- Google AdSense -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173897141-1"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173897141-1');
+  </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- Google AdSense -->
-  <script data-ad-client="ca-pub-8037761873853374" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173897141-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-173897141-1');
-  </script>
-
 
 		<title>The Side Project</title>
 		<meta charset="utf-8" />
@@ -35,7 +33,6 @@
   <!-- Custom styles for this template -->
   <link href="{{ url_for('static', filename='sidehome/css/blog-home.css') }}" rel="stylesheet">
 
-</head>
 
 <body>
 
@@ -83,8 +80,8 @@
         <div class="card mb-4">
           <img class="card-img-top" src="{{ url_for('static', filename='images/asmaa.png') }}" alt="Card image cap">
           <div class="card-body">
-            <h3 class="card-title">Asmaa Amadou: Sustainable Fashion, Togo & Brooklyn</h3>
-            <p class="card-text"><i>Asmaa Amadou is a Togolese-American fashion entrepreneur based in New York. She is the founder of Cameleon Global, who are merging the street style of Brooklyn with the vibrant spirit of African inspired textiles while also tackling sustainability head on in the fashion industry.
+            <h3 class="card-title">Katerina Housos: US Elections, AOC and Lawyering Up in NY</h3>
+            <p class="card-text"><i>Katerina Housos a Greek-American lawyer based in New York. She is the founder of Cameleon Global, who are merging the street style of Brooklyn with the vibrant spirit of African inspired textiles while also tackling sustainability head on in the fashion industry.
             <br><br><strong>Interesting fact: </strong></i></p>
 
             <a href="{{ url_for('main.asmaa') }}" class="btn btn-primary">Read More &rarr;</a>
@@ -99,8 +96,8 @@
         <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
-            <h3 class="card-title">Katerina Housos: US Elections, AOC & Greece</h3>
-            <p class="card-text"><i>Katerina Housos a Greek-American lawyer based in New York.
+            <h3 class="card-title">Rajeev Chattoo: Tinder in NYC, Ghosting & Automation</h3>
+            <p class="card-text"><i>Rajeev Chattoo, a Queens native and an Automation Engineer working in the financial services, reveals all the interesting tid bits of the dating scene in New York City.
             <br><br><strong>Interesting fact: </strong></i></p>
             <a href="#" class="btn btn-primary">Read More &rarr;</a>
           </div>
@@ -127,10 +124,10 @@
         <!-- Pagination -->
         <ul class="pagination justify-content-center mb-4">
           <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
+            <a class="page-link" href="{{ url_for('main.human') }}">&larr; Older</a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="{{ url_for('main.human_two') }}">Newer &rarr;</a>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
           </li>
         </ul>
 
@@ -148,7 +145,7 @@
         <div class="card my-4">
           <h5 class="card-header">Purpose</h5>
           <div class="card-body">
-            <i>While specializing or focusing on one craft, one community, one facet of life, it can be a struggle to acquire information on roadmaps, pain points and solutions for an alien faction, industry or culture. As I transition into full-stack development, I realized I could assemble a platform to resolve this one personal struggle of mine through interview-based blogging. I want to be able to gain and share insights not based on google searches but through people’s journeys, experiences and reflections. <br><br>My name is <a href="{{ url_for('main.about') }}">Renadh Chowdhury</a> and this is my side project.
+            <i>While specializing or focusing on one craft, one community or one facet of life, it can be a struggle to acquire information on roadmaps, pain points and solutions for an alien faction, industry or culture. As I transition into full-stack development, I discovered I could assemble a platform to resolve this one personal struggle of mine through interview-based blogging. I want to be able to gain and share insights not based on google searches but through people’s journeys, experiences and reflections. <br><br>My name is <a href="{{ url_for('main.about') }}">Renadh Chowdhury</a> and this is my side project.
 
             </i>
           </div>

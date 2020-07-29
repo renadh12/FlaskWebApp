@@ -6,6 +6,17 @@
 -->
 <html>
 	<head>
+		<!-- Google AdSense -->
+		<script data-ad-client="ca-pub-8037761873853374" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		  <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173897141-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-173897141-1');
+		</script>
 		<title>The Side Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -18,7 +29,7 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<h1 id="logo"><a href="#">The Side Project</a></h1>
+					<h1 id="logo"><a href="{{ url_for('main.human') }}">The Side Project</a></h1>
 					<p><a href="{{ url_for('main.human') }}">Home</a></p>
 					<p></p>
 					<span class="image avatar"><img src="{{ url_for('static', filename='images/profasmaa.jpg') }}" alt="" /></span>

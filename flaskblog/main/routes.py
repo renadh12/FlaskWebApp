@@ -45,6 +45,10 @@ def about():
 def human():
     return render_template('human.html', title='The Side Project')
 
+@main.route('/humantwo')
+def human_two():
+    return render_template('humantwo.html', title='The Side Project')
+
 @main.route('/nera')
 def nera():
     return render_template('side.html', title='The Side Project : Asmaa Amadou')

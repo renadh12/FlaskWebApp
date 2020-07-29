@@ -2,13 +2,19 @@
 
 {% block content %}
 
-<article class="media content-section">
-    <div class="header" id="myHeader">
-        <h3>Hi I’m Renadh</h3>
-        <br>
-        <p><i>-- an automation engineer living between Austin and New York. This website is a compendium of things related to tech and personal musings. Feel free to <a href="{{ url_for('users.register') }}"><u>chime in</u></a>.</i> </p>
-    </div>
-</article>
+    <article class="media content-section">
+        <div class="header" id="myHeader">
+            <h3>Hi I’m Renadh</h3>
+            <br>
+            <p><i>-- an automation engineer living between Austin and New York. This website is a compendium of things related to tech and personal musings. Feel free to
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('posts.new_post') }}"><u>chime in</u></a> when it's ready.</i></p>
+                {% else %}
+                    <a href="{{ url_for('users.register') }}"><u>chime in</u></a> when it's ready.</i></p>
+                {% endif %}
+            <p><i>In the meantime, you can check out my <a href="{{ url_for('main.human') }}"><strong>side project</strong></a></i>.
+        </div>
+    </article>
 
     {% for post in posts.items %} <!--pagination object so each post is an item-->
         <article class="media content-section">
