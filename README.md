@@ -9,8 +9,8 @@ The goal is to make this website a compendium of things related to tech and pers
 
 The website is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward,
 
-#### Register
-You have to set a username, enter your email and password to sign up. The system allows you to use any non existent random email to sign up. You do not have to use your personal email.
+#### Register (top right navigation bar)
+You have to set a username, enter your email and password to sign up. **_The system allows you to use any non-existent mock email to sign up. You do not have to use an existing original email._**
 
 #### Login
 After registration, you will be redirected to the Login Page. Enter your email and password to log in.
@@ -23,17 +23,6 @@ Once you’re done, click on Post to submit. Your content along with the title s
 
 #### Account
 Once authenticated, you have the ability to update your profile picture, username and email. Head over to Account (top right navigation bar).
-
-
-### Getting Started
-
-Git Instructions
-
-HTTPS
-
-1. `git clone https://github.com/renadh12/FlaskWebApp.git`
-
-2. `git remote add origin https://github.com/renadh12/FlaskWebApp.git`
 
 
 ### Built With
