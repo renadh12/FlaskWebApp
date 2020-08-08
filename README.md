@@ -1,4 +1,4 @@
-# FlaskWebApp
+# thebloglog - A Flask CRUD web app for blogging.
 
 www.thebloglog.site
 
