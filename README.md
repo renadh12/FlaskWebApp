@@ -12,7 +12,7 @@ The website is still in the works. Depending on my bandwidth, I’ll be adding n
 #### Register (top right navigation bar)
 You have to set a username, enter your email and password to sign up. The system allows you to use any non existent random email to sign up. You do not have to use your personal email.
 
-##### Login
+#### Login
 After registration, you will be redirected to the Login Page. Enter your email and password to log in.
 
 #### New Post
