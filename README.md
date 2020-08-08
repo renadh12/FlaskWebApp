@@ -5,11 +5,11 @@ www.thebloglog.site
 ### Project Description
 
 I needed a platform to document my transition from automation to full-stack development. It only made sense I build a CRUD web application to fulfill that need.
-The goal is to make this blog a compendium of things related to tech and personal musings. 
+The goal is to make this website a compendium of things related to tech and personal musings. 
 
 The website is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward,
 
-#### Register (top right navigation bar)
+#### Register
 You have to set a username, enter your email and password to sign up. The system allows you to use any non existent random email to sign up. You do not have to use your personal email.
 
 #### Login
