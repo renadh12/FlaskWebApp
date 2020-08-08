@@ -1,6 +1,6 @@
 # FlaskWebApp
 
-##www.thebloglog.site
+www.thebloglog.site
 
 ### Project Description
 
