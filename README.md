@@ -36,20 +36,21 @@ Once authenticated, you have the ability to update your profile picture, usernam
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
 ####  Front End
-- [Bootstrap]
-- [JavaScript] 
-- [HTML]
-- [CSS]
+- [Bootstrap](https://startbootstrap.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML5](https://html5up.net/)
+- CSS
 
 ####  Database
 
-- [SQLAlchemy](SQLite) - (https://docs.sqlalchemy.org/en/13/)
+- [SQLAlchemy](https://docs.sqlalchemy.org/en/13/)
+- [SQLite](https://www.sqlite.org/index.html)
 
 ####  Deployment & Hosting
 
-- [Linode server] - 
-- [Gunicorn] - (https://gunicorn.org/) - Python WSGI HTTP Server for UNIX to handle Python code.
-- [Nginx] - (https://www.nginx.com/resources/glossary/nginx/) - Web Server to serve static files.
+- [Linode server](https://www.linode.com/) - Host
+- [Gunicorn](https://gunicorn.org/) - Python WSGI HTTP Server for UNIX to handle Python code.
+- [Nginx](https://www.nginx.com/resources/glossary/nginx/) - Web Server to serve static files.
 
 ### Author
 *Renadh Chowdhury*
@@ -57,5 +58,5 @@ Once authenticated, you have the ability to update your profile picture, usernam
 ### Acknowledgements
 - _Corey Schafer_
 - _YouTube_
-- _HTML5_
+- [_HTML5 UP_](https://html5up.net/)
 
