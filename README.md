@@ -4,26 +4,15 @@ www.thebloglog.site
 
 ### Project Description
 
-I needed a platform to document my transition from automation to full-stack development. It only made sense I build a CRUD web application to fulfill that need.
-The goal is to make this website a compendium of things related to tech and personal musings. 
+I needed a platform to document my transition from automation to full-stack development. It only made sense I build a CRUD web application with user authentication to fulfill that need. The goal is to make this website a compendium of things related to tech and personal musings.
 
-This project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward,
+This project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
 
-#### Register (top right navigation bar)
-You have to set a username, enter your email and password to sign up. **_The system allows you to use any non-existent mock email to sign up. You do not have to use an existing original email._**
-
-#### Login
-After registration, you will be redirected to the Login Page. Enter your email and password to log in.
-
-#### New Post
-Upon successful authentication, you should be able to create your post by clicking on New Post on the top right corner of the web page which will generate a create post template with two input entry fields (Title, Content).
-
-#### Post
-Once you’re done, click on Post to submit. Your content along with the title should show up on the Home feed which is visible to the public so if you don’t feel comfortable, feel free to opt out, it’s totally cool!
-
-#### Account
-Once authenticated, you have the ability to update your profile picture, username and email. Head over to Account (top right navigation bar).
-
+### Features
+  - User Registration & Authentication
+  - User Ability to Create Read Update Delete posts.
+  - User Ability to update profile picture, username, email and password
+  - User Page
 
 ### Built With
 
