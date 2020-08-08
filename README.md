@@ -1,4 +1,4 @@
-# thebloglog - A Flask CRUD web app for blogging.
+## thebloglog - A Flask CRUD web app for blogging.
 
 www.thebloglog.site
 
@@ -38,25 +38,25 @@ HTTPS
 
 ### Built With
 
-####Language
+####  Language
 
 - [Python](https://www.python.org/doc/)
 
-####Web Framework
+####  Web Framework
 
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
-####Front End
+####  Front End
 - [Bootstrap]
 - [JavaScript] 
 - [HTML]
 - [CSS]
 
-####Database
+####  Database
 
 - [SQLAlchemy](SQLite) - (https://docs.sqlalchemy.org/en/13/)
 
-####Deployment & Hosting
+####  Deployment & Hosting
 
 - [Linode server] - 
 - [Gunicorn] - (https://gunicorn.org/) - Python WSGI HTTP Server for UNIX to handle Python code.
