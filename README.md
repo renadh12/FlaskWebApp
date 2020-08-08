@@ -9,10 +9,10 @@ I needed a platform to document my transition from automation to full-stack deve
 This project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
 
 ### Features
-  - User Registration & Authentication
+  - User Registration & Authentication.
   - User Ability to Create, Read, Update, Delete posts.
-  - User Ability to update profile picture, username, email and password
-  - User Page
+  - User Ability to update profile picture, username, email and password.
+  - User Page.
 
 ### Built With
 
