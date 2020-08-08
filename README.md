@@ -9,19 +9,19 @@ The goal is to make this blog a compendium of things related to tech and persona
 
 The website is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward,
 
-Register (top right navigation bar)
+##### Register (top right navigation bar)
 You have to set a username, enter your email and password to sign up. The system allows you to use any non existent random email to sign up. You do not have to use your personal email.
 
-Login
+##### Login
 After registration, you will be redirected to the Login Page. Enter your email and password to log in.
 
-New Post
+##### New Post
 Upon successful authentication, you should be able to create your post by clicking on New Post on the top right corner of the web page which will generate a create post template with two input entry fields (Title, Content).
 
-Post
+##### Post
 Once you’re done, click on Post to submit. Your content along with the title should show up on the Home feed which is visible to the public so if you don’t feel comfortable, feel free to opt out, it’s totally cool!
 
-Account
+##### Account
 Once authenticated, you have the ability to update your profile picture, username and email. Head over to Account (top right navigation bar).
 
 
