@@ -10,7 +10,7 @@ This project is still in the works. Depending on my bandwidth, I’ll be adding 
 
 ### Features
   - User Registration & Authentication
-  - User Ability to Create Read Update Delete posts.
+  - User Ability to Create, Read, Update, Delete posts.
   - User Ability to update profile picture, username, email and password
   - User Page
 
