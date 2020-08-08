@@ -38,7 +38,7 @@ Once authenticated, you have the ability to update your profile picture, usernam
 ####  Front End
 - [Bootstrap](https://startbootstrap.com/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [HTML5](https://html5up.net/)
+- [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 
 ####  Database
