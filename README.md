@@ -6,7 +6,7 @@ www.thebloglog.site
 
 I have been meaning to dabble with full-stack development for a while. At the same time, I needed a platform to blog which led to the development of this CRUD web application. This website is a compendium of things related to tech and personal musings.
 
-This project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
+The project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
 
 ### Features
   - User Registration & Authentication.
