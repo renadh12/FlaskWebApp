@@ -22,7 +22,9 @@ def home():
 
 @main.route('/cov')
 def cov():
-    return render_template('cov.html', title='COVID-19')
+    page = request.args.get('page', 1, type=int)  # default page set to 1
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    return render_template('cov.html', title='COVID-19', posts=posts)
 
 
 @main.route('/tech')
@@ -48,6 +50,10 @@ def human():
 @main.route('/humantwo')
 def human_two():
     return render_template('humantwo.html', title='The Side Project')
+
+@main.route('/comingsoon')
+def coming_soon():
+    return render_template('comingsoon.html', title='The Side Project')
 
 @main.route('/nera')
 def nera():

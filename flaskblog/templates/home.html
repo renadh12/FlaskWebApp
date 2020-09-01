@@ -8,11 +8,10 @@
             <br>
             <p><i>-- an automation engineer living between Austin and New York. This website is a compendium of things related to tech and personal musings. Feel free to
                 {% if current_user.is_authenticated %}
-                    <a href="{{ url_for('posts.new_post') }}"><u>chime in</u></a> when it's ready.</i></p>
+                    <a href="{{ url_for('posts.new_post') }}"><u>chime in</u></a></i>.</p>
                 {% else %}
-                    <a href="{{ url_for('users.register') }}"><u>chime in</u></a> when it's ready.</i></p>
+                    <a href="{{ url_for('users.register') }}"><u>chime in</u></a></i>.</p>
                 {% endif %}
-            <p><i>In the meantime, you can check out my <a href="{{ url_for('main.human') }}"><strong>side project</strong></a></i>.
         </div>
     </article>
 

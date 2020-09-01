@@ -1,41 +1,21 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>Tech</h1>
 
-<br>
-Every time I teach myself a new language, framework or a tool, I'm going to document the learning experience here for peeps who are interested. You can expect blog posts on automation, full stack dev, web scraping, data science, QA, interview prep, leetcode grinds, etc.
-<br>
-<br>
 
-The tech stack I have used to build this CRUD web app is outlined below. Stay tuned for a detailed post later on.
+    <article class="media content-section">
+        <div class="header" id="myHeader">
+    <h2>Tech</h2>
+        <i>Learned a new language, tool or a framework? Want to share tech roadmaps, career insights to help others? Blog away!
+        <br>
+            <br>
+            Use </i><strong>"TECH" </strong><i>followed by a hyphen </i><strong>" - "</strong><i> when you initiate your title for your post to populate on this page. </p>
 
-<ul style="list-style-type:square;">
+        </i>
+        </div>
 
-<br>
-<br>
-<li> <b>Language</b>
-    <br>
-            <i>Python</i></li>
-    <br>
-    <li><b>Framework</b><br>
-        <i>Flask</i>
-    </li>
-    <br>
-    <li><b>Front End</b><br>
-        <i>Bootstrap, JavaScript, HTML, CSS</i>
-  </li>
-    <br>
-  <li><b>Database</b><br>
-      <i>Flask-SQLAlchemy (SQLite)</i>
-  </li>
-    <br>
-    <li><b>Web & App Server</b><br>
-        <i>Nginx - to handle the static files (web). <br>
-           Gunicorn - to handle Python code (app).</i>
-    </li>
-</li>
-</ul>
+    </article>
+
 
     {% for post in posts.items %} <!--pagination object so each post is an item-->
         {% if 'TECH' in post.title %}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c80cdf9a-b2bd-4b86-ae52-0254ad0b12bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/img/hero-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/jquery-countdown/jquery.countdown.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/php-email-form/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/comingsoon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/comingsoon/forms/notify.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/comingsoon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/cov2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/techstack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/cov.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/cov.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/tech.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/tech.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XQFg4H8FbhZS725ljzUDyXfF6Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/flaskblog/templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flaskblog/templates" />
+      <recent name="$PROJECT_DIR$/flaskblog/static" />
+      <recent name="$PROJECT_DIR$/flaskblog" />
+      <recent name="$PROJECT_DIR$/flaskblog/static/images" />
+      <recent name="$PROJECT_DIR$/flaskblog/static/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flaskblog/static/assets/css" />
+      <recent name="$PROJECT_DIR$/flaskblog/static" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webapp_flask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskblog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskblog/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.config" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c80cdf9a-b2bd-4b86-ae52-0254ad0b12bd" name="Default Changelist" comment="" />
+      <created>1580970518808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580970518808</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/https:/git.heroku.com/flaskbloglog.git" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593757203526">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1593757203526" />
+    <state x="597" y="283" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594102380360">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="597" y="283" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1594102380360" />
+    <state x="221" y="3" width="1199" height="877" key="SettingsEditor" timestamp="1595281784224">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="3" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1595281784224" />
+    <state x="241" y="23" width="1199" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1593644375174" />
+    <state x="453" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1598976903776">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="453" y="265" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1595478918932" />
+    <state x="453" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1598976903776" />
+    <state x="482" y="98" width="819" height="729" key="find.popup" timestamp="1595734215012">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="98" width="819" height="729" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1595734215012" />
+    <state x="385" y="112" width="838" height="677" key="search.everywhere.popup" timestamp="1594070703737">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="112" width="838" height="677" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1594070703737" />
+  </component>
+</project>
