@@ -4,7 +4,7 @@ www.thebloglog.site
 
 ### Project Description
 
-I needed a platform to document my transition from automation to full-stack development. It only made sense I build a CRUD web application to fulfill that need. This website is going to be a compendium of things involving tech stacks, programming languages and tools I have learned and personal musings.
+I have been meaning to dabble with full-stack development for a while. At the same time, I needed a platform to blog which led to the development of this CRUD web application. This website is a compendium of things related to tech and personal musings.
 
 This project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
 
