@@ -4,10 +4,6 @@ www.thebloglog.site
 
 ### Project Description
 
-I have been meaning to dabble in full-stack development for a while. At the same time, I needed a platform to blog which led to this CRUD web application. This website is a compendium of things related to tech and personal musings.
-
-The project is still in the works. Depending on my bandwidth, I’ll be adding new features and functionalities in the near future. As for now, it’s a pretty basic blog so the steps to get started are quite straightforward - www.thebloglog.site/about.
-
 ### Features
   - User Registration & Authentication.
   - User Ability to Create, Read, Update, Delete posts.
