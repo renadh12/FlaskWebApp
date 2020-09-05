@@ -2,7 +2,6 @@
 
 www.thebloglog.site
 
-### Project Description
 
 ### Features
   - User Registration & Authentication.
