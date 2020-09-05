@@ -39,7 +39,7 @@ www.thebloglog.site
 ### Author
 *Renadh Chowdhury*
 
-### Acknowledgements
+### Acknowledgement
 - _Corey Schafer_
 - _YouTube_
 - [_HTML5 UP_](https://html5up.net/)
